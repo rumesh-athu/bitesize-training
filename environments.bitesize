@@ -1,12 +1,12 @@
-project: sample
+project: rumesh
 environments:
   - name: Development
-    namespace: sample-dev
+    namespace: rumesh-dev
     deployment:
       method: rolling-upgrade
     services:
       - name: spring-app
-        external_url: hellobite-sample.dev-bite.io
+        external_url: rumesh.prsn-dev.io
         port: 8080 
         ssl: "false"
         replicas: 1
